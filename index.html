@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/PUPLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>PUP Hymn</title>
+</head>
+<body>
+   <div class="wrapper">
+
+        <header>
+            <img src="img/PUPLogo.png" alt="PUP Logo">
+            <h1>Polytechnic University of the Philippines</h1>
+            <h1 class="short">PUP</h1>
+            <a target="_blank" href="https://www.pup.edu.ph">Visit Site</a>
+        </header>
+
+        <h1>PUP Hymn</h1>
+        <div class="main"> 
+
+            <div class="hymn">
+                <div class="lyrics-container">
+                    <div id="lyrics"></div>
+                </div>
+           </div>
+
+            <div class="player">
+                <div class="progress-container" >
+                    <div class="progress" id="progress"></div>
+                </div>
+
+                <span id="currentTime">00:00</span>
+            </div>
+
+            <div class="player">
+                <span><i class="fa fa-volume-up"></i></span>
+                <div class="volume-progress-container" >
+                    <div class="volume-progress" id="volume-progress"></div>
+                </div>
+            </div>
+
+
+            <audio src="sound/PUPHymn.mp3" id="hymn"></audio>
+
+            <div class="navigation">
+                <button id="play" class="action-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>Copyright @ 2017 Polytechnic University of the Philippines</p>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
